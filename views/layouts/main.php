@@ -42,32 +42,95 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     ]);
 
 
-
-    
-    echo Menu::widget([
-        'options' => ['class' => 'myNavbar'],
-        'submenuTemplate' => "\n<ul class='submenu'>\n{items}\n</ul>\n",
+    echo Nav::widget([
         'items' => [
-            ['label' => 'Home', 'url' => ['site/index']],
-            ['label' => 'Products', 'options' => ['class' => 'menus'], 'url' => ['product/index'], 'items' => [
-                ['label' => 'New Arrivals', 'url' => ['product/index', 'tag' => 'new']],
-                ['label' => 'Most Popular', 'url' => ['product/index', 'tag' => 'popular']],
-            ]],
-            ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
+            [
+                'label' => 'Главная',
+                'url' => ['site/index'],
+                
+            ],
+            [
+                'label' => 'АУП',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            [
+                'label' => 'ОпРК',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            [
+                'label' => 'ОСТО',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            [
+                'label' => 'ОЭЛКС',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            [
+                'label' => 'ОПП',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            [
+                'label' => 'ОСИТИ',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            [
+                'label' => 'ОпЭиИ',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            [
+                'label' => 'УП',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            [
+                'label' => 'ОЦОБ',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            [
+                'label' => 'ОДО',
+                'items' => [
+                     ['label' => 'Новости', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '#'],
+                ],
+            ],
+            
         ],
+        'options' => ['class' =>'nav-pills'],
     ]);
-
-
 
 
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Регистрация', 'url' => ['/user/create']],
             Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
+                ? ['label' => 'Вход', 'url' => ['/site/login']]
                 : '<li class="nav-item">'
                     . Html::beginForm(['/site/logout'])
                     . Html::submitButton(

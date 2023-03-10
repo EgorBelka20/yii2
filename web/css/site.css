@@ -83,17 +83,11 @@ a.desc:after {
     outline: none;
 }
 
-
-
-
-
-ol, ul, dl, li, a {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
+.nav-link {
+    color: #FFF;
 }
 
+.nav-link:hover {
+    color: #FFF;
+    background-color: #0d6efd;
+}
