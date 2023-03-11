@@ -46,77 +46,77 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'items' => [
             [
                 'label' => 'Главная',
-                'url' => ['site/index'],
+                'url' => ['/site/index'],
                 
             ],
             [
                 'label' => 'АУП',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             [
                 'label' => 'ОпРК',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             [
                 'label' => 'ОСТО',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             [
                 'label' => 'ОЭЛКС',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             [
                 'label' => 'ОПП',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             [
                 'label' => 'ОСИТИ',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             [
                 'label' => 'ОпЭиИ',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             [
                 'label' => 'УП',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             [
                 'label' => 'ОЦОБ',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             [
                 'label' => 'ОДО',
                 'items' => [
                      ['label' => 'Новости', 'url' => '#'],
-                     ['label' => 'Папка отдела', 'url' => '#'],
+                     ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
             

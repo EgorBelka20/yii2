@@ -91,3 +91,11 @@ a.desc:after {
     color: #FFF;
     background-color: #0d6efd;
 }
+
+.btn-success{
+    margin-top: 10px;
+}
+
+.btn-primary{
+    margin-top: 9px;
+}
