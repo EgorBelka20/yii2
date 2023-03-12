@@ -41,8 +41,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top']
     ]);
 
+    
+
 
     echo Nav::widget([
+        'options' => ['class' => 'navbar-nav'],
         'items' => [
             [
                 'label' => 'Главная',
@@ -119,22 +122,14 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                      ['label' => 'Папка отдела', 'url' => '/web/filemanager/default/index?path=%2F'],
                 ],
             ],
-            
-        ],
-        'options' => ['class' =>'nav-pills'],
-    ]);
-
-
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav'],
-        'items' => [
+            ['label' => 'Панель', 'url' => ['/admin']],
             ['label' => 'Регистрация', 'url' => ['/user/create']],
             Yii::$app->user->isGuest
                 ? ['label' => 'Вход', 'url' => ['/site/login']]
                 : '<li class="nav-item">'
                     . Html::beginForm(['/site/logout'])
                     . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->login . ')',
+                        'Выход (' . Yii::$app->user->identity->login . ')',
                         ['class' => 'nav-link btn btn-link logout']
                     )
                     . Html::endForm()

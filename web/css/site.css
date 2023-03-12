@@ -85,6 +85,7 @@ a.desc:after {
 
 .nav-link {
     color: #FFF;
+    border-radius: 5px;
 }
 
 .nav-link:hover {
@@ -98,4 +99,13 @@ a.desc:after {
 
 .btn-primary{
     margin-top: 9px;
+}
+
+.text-oglav{
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.btn-outline-secondary{
+    margin-top: 20px;
 }
